@@ -14,5 +14,35 @@ const binaryToDec = bin => {
 
 		return Number(dec);
 	}
-	return false;
+};
+
+const decToBinary = dec => {
+	if (dec === true || dec === false)
+		throw new Error(
+			'Expected a decimal number but instead got a Boolean value'
+		);
+
+	dec = Number(dec);
+
+	if (isNaN(dec)) throw new Error('Not a number.');
+	else if (dec === 0) return 0;
+
+	let remArray = [],
+		ans = dec,
+		remString = '';
+	while (ans !== 0) {
+		remArray.push(ans % 2);
+		ans = Math.floor(ans / 2);
+	}
+
+	while (remArray.length > 0) {
+		remString += String(remArray.pop());
+	}
+
+	return remString;
+};
+
+module.exports = {
+	decToBinary,
+	binaryToDec,
 };
