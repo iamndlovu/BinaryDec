@@ -1,0 +1,22 @@
+{
+  "name": "binarydec",
+  "version": "1.0.0",
+  "description": "Convert binary digits to decimal and the other way round",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamndlovu/BinaryDec.git"
+  },
+  "keywords": [
+    "Binary"
+  ],
+  "author": "iamndlovu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamndlovu/BinaryDec/issues"
+  },
+  "homepage": "https://github.com/iamndlovu/BinaryDec#readme"
+}
